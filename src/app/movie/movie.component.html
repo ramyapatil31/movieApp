@@ -1,0 +1,23 @@
+<ion-header padding no-border>
+  <ion-toolbar>
+     <ion-icon slot="start" name="arrow-back" (click)="back()"></ion-icon>
+      <ion-title>
+        Movies
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="bg">
+    
+       <ion-card *ngFor="let m of movies">
+       <ion-img src="{{m.image_url}}"></ion-img>
+        <ion-card-content>
+          <ion-label><strong>{{m.name}}</strong><ion-badge color="danger" slot="end">{{m.rating}}<ion-icon name="heart"></ion-icon></ion-badge></ion-label>        
+         <br> <ion-card-subtitle>{{m.date}} | {{m.type}} | {{m.language}}</ion-card-subtitle>
+         <br> <ion-card-subtitle></ion-card-subtitle>
+         <ion-button expand="full" color="danger" (click)="movie()">More</ion-button>
+        </ion-card-content>
+      </ion-card> 
+    
+  </ion-content>
+  

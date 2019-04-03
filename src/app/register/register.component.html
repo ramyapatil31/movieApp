@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+      <a href="login"><ion-icon slot="start" name="arrow-back" ></ion-icon></a>
+    <ion-title>
+      Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+    <ion-card-content>
+        <ion-item>
+            <ion-icon color="#666" slot="start" name="person"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Name" [(ngModel)]="customer.name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="#666" slot="start" name="mail"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Email" [(ngModel)]="customer.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon color="#666" slot="start" name="key"></ion-icon>
+          <ion-input type="text" class="ion-padding" placeholder="Password" [(ngModel)]="customer.password"></ion-input>
+      </ion-item>
+        <ion-item>
+            <ion-icon color="#666" slot="start" name="home"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Address" [(ngModel)]="customer.address"></ion-input>
+        </ion-item>  
+        <ion-item>
+            <ion-icon color="#666" slot="start" name="call"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Phone" [(ngModel)]="customer.phone"></ion-input>
+        </ion-item> 
+        
+        <ion-row>
+          <ion-col style="text-align: center">
+            <ion-button color="danger" expand="full" shape="round" (click)="addCustomer()">Register</ion-button><br>
+            Have a BIL account? <a href="login">Login</a><br><br>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>     
+    </ion-card>
+</ion-content>

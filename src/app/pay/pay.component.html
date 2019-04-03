@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+      <a href="payment"><ion-icon slot="start" name="arrow-back" ></ion-icon></a>
+    <ion-title>
+      Enter Payment Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+    <ion-card-content>
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="create"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Card Number"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="create"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="CVV"></ion-input>
+        </ion-item>
+      
+      
+        
+        <ion-row>
+          <ion-col style="text-align: center">
+            <ion-button color="danger" expand="full" shape="round" (click)="done()">Pay</ion-button><br>
+            
+          </ion-col>
+        </ion-row>
+      </ion-card-content>     
+    </ion-card>
+</ion-content>

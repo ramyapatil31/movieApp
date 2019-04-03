@@ -1,0 +1,29 @@
+<ion-header padding no-border>
+  <ion-toolbar>
+      <a href="login"><ion-icon slot="start" name="arrow-back" ></ion-icon></a>
+      <ion-title>
+        Movies
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="bg">
+    
+       <ion-card *ngFor="let m of movies">
+       <ion-img src="{{m.image_url}}"></ion-img>
+        <ion-card-content>
+          <ion-label><strong>{{m.name}}</strong></ion-label> 
+         <ion-button expand="full" color="danger" (click)="booking(m)">More</ion-button>
+        </ion-card-content>
+      </ion-card>
+      
+        <ion-card>
+         <ion-item>
+            <ion-icon name="gift" color="#666" ></ion-icon>
+             <ion-label style="text-align: center">Offer Details</ion-label>
+          <ion-button color="success" (click)="offersPage()">Check</ion-button>
+        </ion-item>
+        </ion-card>
+
+  </ion-content>
+  

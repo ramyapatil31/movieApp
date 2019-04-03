@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+      <a href="booking"><ion-icon slot="start" name="arrow-back" ></ion-icon></a>
+    <ion-title>
+      Continue Booking
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+    <ion-card-content>
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="at"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Id" [(ngModel)]="booking.customer_id"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="at"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Tickets" [(ngModel)]="booking.tickets"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon color="danger" slot="start" name="person"></ion-icon>
+          <ion-input type="text" class="ion-padding" placeholder="Movie Id" [(ngModel)]="booking.movie_id"></ion-input>
+      </ion-item>
+        
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="person"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder=" Movie Name" [(ngModel)]="booking.movie_name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon color="danger" slot="start" name="person"></ion-icon>
+          <ion-input type="text" class="ion-padding" placeholder="Movie Time" [(ngModel)]="booking.movie_time"></ion-input>
+      </ion-item>
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="key"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Theatre" [(ngModel)]="booking.theatre"></ion-input>
+        </ion-item> 
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="key"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Screen" [(ngModel)]="booking.screen"></ion-input>
+        </ion-item> 
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="key"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="City" [(ngModel)]="booking.city"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="thumbs-up"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Date" [(ngModel)]="booking.movie_date"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-icon color="danger" slot="start" name="thumbs-up"></ion-icon>
+            <ion-input type="text" class="ion-padding" placeholder="Release Date" [(ngModel)]="booking.date"></ion-input>
+        </ion-item> 
+        <ion-item>
+          <ion-icon color="danger" slot="start" name="thumbs-up"></ion-icon>
+          <ion-input type="text" class="ion-padding" placeholder="Amount" [(ngModel)]="booking.amount"></ion-input>
+      </ion-item> 
+      <ion-item>
+          <ion-icon color="danger" slot="start" name="thumbs-up"></ion-icon>
+          <ion-input type="text" class="ion-padding" placeholder="Ticket Price" [(ngModel)]="booking.ticket_price"></ion-input>
+      </ion-item>
+        
+        <ion-row>
+          <ion-col style="text-align: center">
+            <ion-button color="danger" expand="full" shape="round" (click)="addBooking(booking)">Book</ion-button><br>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>     
+    </ion-card>
+</ion-content>
